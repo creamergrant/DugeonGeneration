@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Constants.h" />
+    <ClInclude Include="Source\Edge.h" />
+    <ClInclude Include="Source\Framework\Application\GameLoop.h" />
+    <ClInclude Include="Source\Framework\Application\TimeStep.h" />
+    <ClInclude Include="Source\Framework\Audio\Audio.h" />
+    <ClInclude Include="Source\Framework\Audio\AudioTypes.h" />
+    <ClInclude Include="Source\Framework\Graphics\CircleRenderer.h" />
+    <ClInclude Include="Source\Framework\Graphics\LineRenderer.h" />
+    <ClInclude Include="Source\Framework\Graphics\PointRenderer.h" />
+    <ClInclude Include="Source\Framework\Graphics\IRenderer.h" />
+    <ClInclude Include="Source\Framework\Graphics\SpriteRenderer.h" />
+    <ClInclude Include="Source\Framework\Input\Gamepad.h" />
+    <ClInclude Include="Source\Framework\Math\AABB.h" />
+    <ClInclude Include="Source\Framework\Math\LineSegment.h" />
+    <ClInclude Include="Source\Framework\Math\Transformable.h" />
+    <ClInclude Include="Source\Framework\Debug\Log.h" />
+    <ClInclude Include="Source\Framework\Debug\Profile.h" />
+    <ClInclude Include="Source\Framework\GameDev2D.h" />
+    <ClInclude Include="Source\Framework\Graphics\AnimatedSprite.h" />
+    <ClInclude Include="Source\Framework\Graphics\Buffer.h" />
+    <ClInclude Include="Source\Framework\Graphics\Camera.h" />
+    <ClInclude Include="Source\Framework\Graphics\Color.h" />
+    <ClInclude Include="Source\Framework\Graphics\ColorList.h" />
+    <ClInclude Include="Source\Framework\Graphics\Font.h" />
+    <ClInclude Include="Source\Framework\Graphics\GraphicTypes.h" />
+    <ClInclude Include="Source\Framework\Graphics\BatchRenderer.h" />
+    <ClInclude Include="Source\Framework\Graphics\Shader.h" />
+    <ClInclude Include="Source\Framework\Graphics\Sprite.h" />
+    <ClInclude Include="Source\Framework\Graphics\SpriteAtlas.h" />
+    <ClInclude Include="Source\Framework\Graphics\SpriteFont.h" />
+    <ClInclude Include="Source\Framework\Graphics\Texture.h" />
+    <ClInclude Include="Source\Framework\Graphics\VertexArray.h" />
+    <ClInclude Include="Source\Framework\Input\Keyboard.h" />
+    <ClInclude Include="Source\Framework\Input\Mouse.h" />
+    <ClInclude Include="Source\Framework\Math\Math.h" />
+    <ClInclude Include="Source\Framework\Math\Matrix.h" />
+    <ClInclude Include="Source\Framework\Math\Random.h" />
+    <ClInclude Include="Source\Framework\Math\Vector2.h" />
+    <ClInclude Include="Source\Framework\Memory\MemoryBlock.h" />
+    <ClInclude Include="Source\Framework\Memory\ObjectPool.h" />
+    <ClInclude Include="Source\Framework\Platform\Platform.h" />
+    <ClInclude Include="Source\Framework\Resources\Resource.h" />
+    <ClInclude Include="Source\Framework\Resources\ResourceCache.h" />
+    <ClInclude Include="Source\Framework\Audio\AudioEngine.h" />
+    <ClInclude Include="Source\Framework\Debug\DebugUI.h" />
+    <ClInclude Include="Source\Framework\Graphics\Graphics.h" />
+    <ClInclude Include="Source\Framework\Input\InputManager.h" />
+    <ClInclude Include="Source\Framework\Resources\ResourceManager.h" />
+    <ClInclude Include="Source\Framework\Utils\Png\Png.h" />
+    <ClInclude Include="Source\Framework\Utils\Text\Text.h" />
+    <ClInclude Include="Source\Framework\Utils\Wave\Wave.h" />
+    <ClInclude Include="Source\Framework\Application\Application.h" />
+    <ClInclude Include="Source\Framework\Application\Config.h" />
+    <ClInclude Include="Source\Framework\Platform\Windows\FileSystem.h" />
+    <ClInclude Include="Source\Framework\Platform\GameWindow.h" />
+    <ClInclude Include="Source\Framework\Platform\Windows\HardwareInfo.h" />
+    <ClInclude Include="Source\Framework\Platform\Windows\stdafx.h" />
+    <ClInclude Include="Source\Game.h" />
+    <ClInclude Include="Source\Graph\Graph.h" />
+    <ClInclude Include="Source\Graph\Vertex.h" />
+    <ClInclude Include="Source\Libraries\entt\config\config.h" />
+    <ClInclude Include="Source\Libraries\entt\config\version.h" />
+    <ClInclude Include="Source\Libraries\entt\entt.hpp" />
+    <ClInclude Include="Source\Libraries\entt\signal\delegate.hpp" />
+    <ClInclude Include="Source\Libraries\entt\signal\fwd.hpp" />
+    <ClInclude Include="Source\Libraries\entt\signal\sigh.hpp" />
+    <ClInclude Include="Source\Libraries\jsoncpp\autolink.h" />
+    <ClInclude Include="Source\Libraries\jsoncpp\config.h" />
+    <ClInclude Include="Source\Libraries\jsoncpp\features.h" />
+    <ClInclude Include="Source\Libraries\jsoncpp\forwards.h" />
+    <ClInclude Include="Source\Libraries\jsoncpp\json.h" />
+    <ClInclude Include="Source\Libraries\jsoncpp\json_batchallocator.h" />
+    <ClInclude Include="Source\Libraries\jsoncpp\reader.h" />
+    <ClInclude Include="Source\Libraries\jsoncpp\value.h" />
+    <ClInclude Include="Source\Libraries\jsoncpp\writer.h" />
+    <ClInclude Include="Source\Libraries\stb_image\stb_image.h" />
+    <ClInclude Include="Source\Point.h" />
+    <ClInclude Include="Source\Room.h" />
+    <ClInclude Include="Source\Triangle.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Edge.cpp" />
+    <ClCompile Include="Source\Framework\Application\GameLoop.cpp" />
+    <ClCompile Include="Source\Framework\Audio\Audio.cpp" />
+    <ClCompile Include="Source\Framework\Graphics\CircleRenderer.cpp" />
+    <ClCompile Include="Source\Framework\Graphics\LineRenderer.cpp" />
+    <ClCompile Include="Source\Framework\Graphics\PointRenderer.cpp" />
+    <ClCompile Include="Source\Framework\Graphics\IRenderer.cpp" />
+    <ClCompile Include="Source\Framework\Graphics\SpriteRenderer.cpp" />
+    <ClCompile Include="Source\Framework\Input\Gamepad.cpp" />
+    <ClCompile Include="Source\Framework\Math\AABB.cpp" />
+    <ClCompile Include="Source\Framework\Math\LineSegment.cpp" />
+    <ClCompile Include="Source\Framework\Math\Transformable.cpp" />
+    <ClCompile Include="Source\Framework\Debug\Log.cpp" />
+    <ClCompile Include="Source\Framework\Debug\Profile.cpp" />
+    <ClCompile Include="Source\Framework\GameDev2D.cpp" />
+    <ClCompile Include="Source\Framework\Graphics\AnimatedSprite.cpp" />
+    <ClCompile Include="Source\Framework\Graphics\Buffer.cpp" />
+    <ClCompile Include="Source\Framework\Graphics\Camera.cpp" />
+    <ClCompile Include="Source\Framework\Graphics\Color.cpp" />
+    <ClCompile Include="Source\Framework\Graphics\Font.cpp" />
+    <ClCompile Include="Source\Framework\Graphics\BatchRenderer.cpp" />
+    <ClCompile Include="Source\Framework\Graphics\Shader.cpp" />
+    <ClCompile Include="Source\Framework\Graphics\Sprite.cpp" />
+    <ClCompile Include="Source\Framework\Graphics\SpriteAtlas.cpp" />
+    <ClCompile Include="Source\Framework\Graphics\SpriteFont.cpp" />
+    <ClCompile Include="Source\Framework\Graphics\Texture.cpp" />
+    <ClCompile Include="Source\Framework\Graphics\VertexArray.cpp" />
+    <ClCompile Include="Source\Framework\Input\Keyboard.cpp" />
+    <ClCompile Include="Source\Framework\Input\Mouse.cpp" />
+    <ClCompile Include="Source\Framework\Math\Math.cpp" />
+    <ClCompile Include="Source\Framework\Math\Matrix.cpp" />
+    <ClCompile Include="Source\Framework\Math\Random.cpp" />
+    <ClCompile Include="Source\Framework\Math\Vector2.cpp" />
+    <ClCompile Include="Source\Framework\Audio\AudioEngine.cpp" />
+    <ClCompile Include="Source\Framework\Debug\DebugUI.cpp" />
+    <ClCompile Include="Source\Framework\Graphics\Graphics.cpp" />
+    <ClCompile Include="Source\Framework\Input\InputManager.cpp" />
+    <ClCompile Include="Source\Framework\Resources\ResourceManager.cpp" />
+    <ClCompile Include="Source\Framework\Utils\Png\Png.cpp" />
+    <ClCompile Include="Source\Framework\Utils\Text\Text.cpp" />
+    <ClCompile Include="Source\Framework\Utils\Wave\Wave.cpp" />
+    <ClCompile Include="Source\Framework\Application\Application.cpp" />
+    <ClCompile Include="Source\Framework\Application\Config.cpp" />
+    <ClCompile Include="Source\Framework\Platform\Windows\FileSystem.cpp" />
+    <ClCompile Include="Source\Framework\Platform\GameWindow.cpp" />
+    <ClCompile Include="Source\Framework\Platform\Windows\HardwareInfo.cpp" />
+    <ClCompile Include="Source\Framework\Platform\Windows\stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\Graph\Graph.cpp" />
+    <ClCompile Include="Source\Graph\Vertex.cpp" />
+    <ClCompile Include="Source\Libraries\glad\src\glad.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\jsoncpp\json_reader.cpp" />
+    <ClCompile Include="Source\Libraries\jsoncpp\json_value.cpp" />
+    <ClCompile Include="Source\Libraries\jsoncpp\json_writer.cpp" />
+    <ClCompile Include="Source\Game.cpp" />
+    <ClCompile Include="Source\Libraries\stb_image\stb_image.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="Source\main.cpp" />
+    <ClCompile Include="Source\Point.cpp" />
+    <ClCompile Include="Source\Room.cpp" />
+    <ClCompile Include="Source\Triangle.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Shaders\CircleRenderer.glsl" />
+    <None Include="Assets\Shaders\LineRenderer.glsl" />
+    <None Include="Assets\Shaders\PointRenderer.glsl" />
+    <None Include="Assets\Shaders\SpriteRenderer.glsl" />
+    <None Include="Source\Framework\Memory\MemoryBlock.inl" />
+    <None Include="Source\Framework\Memory\ObjectPool.inl" />
+    <None Include="Source\Libraries\jsoncpp\json_internalarray.inl" />
+    <None Include="Source\Libraries\jsoncpp\json_internalmap.inl" />
+    <None Include="Source\Libraries\jsoncpp\json_valueiterator.inl" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5B4F3AE6-46CD-46D8-BB74-330F3B13576B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GameDev2D</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>GameDev2D-GAM1544</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(MSBuildProjectDirectory)\Builds\$(TargetName)\$(Configuration)\</OutDir>
+    <IntDir>$(MSBuildProjectDirectory)\Intermediate Files\$(TargetName)\$(Configuration)\</IntDir>
+    <IncludePath>$(MSBuildProjectDirectory)\Source\Framework;$(MSBuildProjectDirectory)\Source\Libraries\jsoncpp\;$(MSBuildProjectDirectory)\Source\Libraries\entt\;$(MSBuildProjectDirectory)\Source\Libraries\stb_image\;$(MSBuildProjectDirectory)\Source\Libraries\glad\include\;$(MSBuildProjectDirectory)\Source\Libraries\glfw\include\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(MSBuildProjectDirectory)\Source\Libraries\glfw\win32\lib-vc2019\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(MSBuildProjectDirectory)\Source\Framework\;$(MSBuildProjectDirectory)\Source\Libraries\jsoncpp\;$(MSBuildProjectDirectory)\Source\Libraries\entt\;$(MSBuildProjectDirectory)\Source\Libraries\stb_image\;$(MSBuildProjectDirectory)\Source\Libraries\glad\include\;$(MSBuildProjectDirectory)\Source\Libraries\glfw\include\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(MSBuildProjectDirectory)\Source\Libraries\glfw\win32\lib-vc2019\;$(LibraryPath)</LibraryPath>
+    <OutDir>$(MSBuildProjectDirectory)\Builds\$(TargetName)\$(Configuration)\</OutDir>
+    <IntDir>$(MSBuildProjectDirectory)\Intermediate Files\$(TargetName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;DEBUG;_DEBUG;_WINDOWS;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;_MSC_PLATFORM_TOOLSET_$(PlatformToolset);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ForcedIncludeFiles>stdafx.h</ForcedIncludeFiles>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/NODEFAULTLIB:MSVCRT %(AdditionalOptions)</AdditionalOptions>
+      <EntryPointSymbol>mainCRTStartup </EntryPointSymbol>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>
+      </Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;_MSC_PLATFORM_TOOLSET_$(PlatformToolset);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ForcedIncludeFiles>stdafx.h</ForcedIncludeFiles>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <EntryPointSymbol>mainCRTStartup </EntryPointSymbol>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
