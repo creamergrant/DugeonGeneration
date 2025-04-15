@@ -6,3 +6,8 @@
 - Construct a Delaunay Triangulation Graph
 - Generate a minimum spanning tree based off of the graph
   - I used Kruskal's algorthim
+  - Add some Removed lines back for more interesting dungeon
+- Hallways
+  - Make slanted lines straight for hallways
+  - Bring back smaller rooms that overlap theses lines
+  - Fill empty void with hallway
